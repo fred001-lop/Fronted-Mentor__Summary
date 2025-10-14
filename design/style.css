@@ -1,0 +1,19 @@
+/* Font family */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+/* ------------------------ */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Hanken Grotesk";
+    background-color: hsl(221, 100%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
