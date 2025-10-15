@@ -23,7 +23,7 @@ body{
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     overflow: hidden;
-    max-width: 400px;
+    max-width: 500px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
@@ -43,7 +43,7 @@ body{
 }
 
 .score-circle{
-    background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -73,5 +73,81 @@ body{
     margin-top: 10px;
     font-size: 13px;
     opacity: 0.5;
-    /* line-height: 1.6; */
+    line-height: 1.4;
+}
+
+/* Panel derecho */
+
+.summary{
+    flex: 1;
+    padding: 2rem;
+}
+
+.summary h2{
+    margin-bottom: 1.2rem;
+    opacity: 0.6;
+    font-size: 1.2rem;
+}
+
+.summary-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+}
+
+.summary-item img{
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+.category{
+    flex: 1;
+    margin-left: 0.5rem;
+}
+
+/* colores por categoria */
+
+.reaction{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 98%, 1);
+}
+
+.memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(48, 86%, 95%, 1);
+}
+
+.verbal{
+    background-color: hsla(162, 53%, 97%, 1);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual{
+    background-color: hsla(225, 100%, 97%, 1);
+    color: hsl(234, 85%, 45%);
+}
+
+/* diseño del boton */
+
+.continue-btn{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    border: none;
+    padding: 0.7rem;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.continue-btn:hover{
+    background-color: hsla(256, 72%, 46%, 1);
 }
