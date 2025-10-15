@@ -17,3 +17,61 @@ body{
     align-items: center;
     height: 100vh;
 }
+
+.result-card{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.result {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 2rem;
+    flex: 1;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.result h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+}
+
+.score-circle{
+    background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-circle .score{
+    font-size: 2.5rem;
+    font-weight: 800;
+
+}
+
+.out-of{
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+.result h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.result p{
+    margin-top: 10px;
+    font-size: 13px;
+    opacity: 0.5;
+    /* line-height: 1.6; */
+}
