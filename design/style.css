@@ -105,12 +105,16 @@ body{
 
 .category{
     flex: 1;
-    margin-left: 0.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    /* margin-left: 0rem; */
+    /* margin-right: 0.8rem; */
 }
 
 /* colores por categoria */
 
 .reaction{
+    font-size: 12px;
     color: hsl(0, 100%, 67%);
     background-color: hsla(0, 100%, 98%, 1);
 }
@@ -118,16 +122,59 @@ body{
 .memory{
     color: hsl(39, 100%, 56%);
     background-color: hsla(48, 86%, 95%, 1);
+    font-size: 12px;
 }
 
 .verbal{
     background-color: hsla(162, 53%, 97%, 1);
     color: hsl(166, 100%, 37%);
+    font-size: 12px;
 }
 
 .visual{
     background-color: hsla(225, 100%, 97%, 1);
     color: hsl(234, 85%, 45%);
+    font-size: 12px;
+}
+
+.reaction .score{
+    color: #000;
+    font-weight: 500;
+}
+
+.reaction .out-of{
+    opacity: 0.4;
+    font-size: 12px;
+}
+
+.memory .score{
+    color: #000;
+    font-weight: 500;
+}
+
+.memory .out-of{
+    opacity: 0.4;
+    font-size: 12px;
+}
+
+.verbal .score{
+    color: #000;
+    font-weight: 500;
+}
+
+.verbal .out-of{
+    opacity: 0.4;
+    font-size: 12px;
+}
+
+.visual .score{
+    color: #000;
+    font-weight: 500;
+}
+
+.visual .out-of{
+    opacity: 0.4;
+    font-size: 12px;
 }
 
 /* diseño del boton */
@@ -150,4 +197,27 @@ body{
 
 .continue-btn:hover{
     background-color: hsla(256, 72%, 46%, 1);
+}
+
+
+
+@media (max-width: 600px) {
+    .result-card{
+        flex-direction: column;
+        
+    }
+
+    .result {
+        border-radius: 0 0 20px 20px;
+    }
+    .summary {
+        border-radius: 0 20px 20px 0;
+    }
+}
+
+@media (min-width: 1440px){
+    .result-card{
+        display: flex;
+        flex-direction: row;
+    }
 }
